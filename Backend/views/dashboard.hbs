@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <style>
+        body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the dashboard content */
+.dashboard-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Add some spacing to the "No users found" message */
+.no-users {
+    margin-top: 20px;
+}
+
+/* Style the "Home" link */
+.home-link {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+/* Style the header */
+h1 {
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <h1>Admin DASHBOARD</h1>
+    <br>
+
+    <table widht="50%">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            {{!-- <th>Edit</th> --}}
+        </tr>
+
+{{#if user.length}}
+    <table colspan=5>
+        {{#each user}}
+            <tr colspan = 5> 
+                <td>{{this.name}}</td>
+                <td>{{this.email}}</td>
+                <td>
+                    <a href="/admin/edit-user?id={{this._id}}">Edit</a>
+                    <a href="/admin/delete-user?id={{this._id}}">Delete</a>
+                    </td>
+            </tr>
+        {{/each}}
+    </table>
+{{else}}
+    <p>No users found</p>
+{{/if}}
+
+
+    </table>
+    <br>
+    <a href="/admin/adminDash"> Home </a>
+</body>
+</html>

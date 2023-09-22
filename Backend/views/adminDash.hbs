@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin panel</title>
+</head>
+<body>
+    <h1>hey admin panel, {{admin.name}} </h1>
+    <br>
+    <a href="/admin/dashboard">Dashboard</a>
+    <table style ="width: 50%;">
+        <tr>
+            <td>
+                Name : {{admin.name}}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Email : {{admin.email}}
+            </td>
+        </tr>
+    </table>
+    <a href="/admin/logout"> Logout </a>
+</body>
+</html>

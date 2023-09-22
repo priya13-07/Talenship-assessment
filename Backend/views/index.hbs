@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Educational Consultancy website</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-content-div">
+        <a href="#home-sec">
+          <img
+            src="./images/logo.jpg" 
+            alt="Company Logo"
+            id="header-img"
+        /></a>
+        <nav id="nav-bar">
+          <a href="#carousel" class="nav-link">HOME</a>
+          <a href="#about" class="nav-link">ABOUT</a>
+          <a href="#our-service" class="nav-link">OUR SERVICE</a>
+          <a href="#contact" class="nav-link">CONTACT</a>
+          <a href="/register" id="reg" class="nav-link">Register/Login</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+
+        <!-- Add this section for the carousel below your existing content -->
+<section id="carousel" class="flexible">
+    <div class="carousel-content">
+      <div id = "first" class="carousel-slide">
+        <!-- <img src="carousel 1.avif" alt="Carousel Image 1" /> -->
+        <div  class="carousel-text">
+          <h1>Multiple courses for the betterment</h1>
+          <p>Explore our vast collection of courses from various domains.</p>
+          <a href="#our-service" class="btn">Browse courses</a>
+        </div>
+      </div>
+      <div id = "second"  class="carousel-slide">
+        <!-- <img src="carousel 2.jpg" alt="Carousel Image 2" /> -->
+        <div class="carousel-text">
+          <h1>Expert Advisors</h1>
+          <p>Experienced educational consultants who provide expert guidance to students.</p>
+          <!-- <a href="#about" class="btn">Learn More</a> -->
+        </div>
+      </div>
+      <div id = "third"  class="carousel-slide">
+        <!-- <img src="about-image.webp" alt="Carousel Image 3" /> -->
+        <div class="carousel-text">
+          <h1>Get lost in Knowledge</h1>
+          <p>Immerse yourself in captivating journey of Learning.</p>
+          <a href="#contact" class="btn">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+      <section id="about" class="sec-padding">
+        <h3 class="section-heading">ABOUT US</h3>
+        <div class="sec-content-div flexible">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <img src="./images/about-image.avif" alt="A Book shelf full of Books" />
+        </div>
+      </section>
+      
+      </section>
+      <section id="our-service" class="sec-padding">
+        <h3 class="section-heading">OUR SERVICE</h3>
+        <div class="sec-content-div">
+            <h3 class="section-heading">COURSES</h3>
+            <div class="course-tile">
+            <div class="tile">
+                <img src="./images/course1.png" alt="photo of book" />
+                <h4>HTML basics</h4>
+              </div>
+              <div class="tile">
+                <img src="./images/course2.jpg" alt="photo of book" />
+                <h4>Pyhton</h4>
+              </div>
+              <div class="tile">
+                <img src="./images/course3.png" alt="photo of book" />
+                <h4>Java Basics</h4>
+              </div>
+            </div>
+        </div>
+      </section>
+      <section class="sec-padding" id="contact">
+        <h3 class="section-heading">CONTACT</h3>
+        <div class="sec-content-div flexible">
+          <h6>To order or just contact us use your Email:</h6>
+          <form
+            id="form"
+            action="https://www.freecodecamp.com/email-submit"
+            method="POST"
+          >
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your Email Address"
+              required
+            />
+            <input type="submit" class="btn" id="submit" value="Know More" />
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      Created by
+      <a href="#">Priya jain</a>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
